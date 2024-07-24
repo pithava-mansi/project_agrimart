@@ -28,6 +28,7 @@
                 <a class="nav-link text-dark" href="login.php"><span
                         class="btn nav-item text-danger">Login</span></a>
             </form>
+           
         </div>
     </div>
 </nav>

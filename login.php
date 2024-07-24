@@ -1,9 +1,9 @@
 <?php
    // include 'admin/error.php';
   session_start();
-//   if (isset($_SESSION['ID'])) {
-//       header("Location:dashboard.php");
-//       exit();
+//  if (isset($_SESSION['ID'])) {
+//      header("Location:index.php");
+//      exit();
 //   }
   // Include database connectivity
     
@@ -28,7 +28,7 @@
             }elseif(1==$row['user_role']){
                 header("Location:admin/index.php");
             }elseif(2==$row['user_role']){
-                header("Location:dashboard.php");
+                header("Location:index.php");
             }
             die();                              
         }else{

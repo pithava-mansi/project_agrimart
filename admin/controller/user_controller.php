@@ -56,7 +56,7 @@ class users
         $result=$obj->insert($fname,$lname,$email,$username,$pass,$role);
         
         if ($result==true) {
-          header("Location:index.php");
+          header("Location:login.php");
           die();
         }else{
           $errorMsg  = "You are not Registred..Please Try again";

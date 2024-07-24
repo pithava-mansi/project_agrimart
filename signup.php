@@ -61,7 +61,7 @@ include 'admin/controller/user_controller.php';
                         <h3>you have alrady Account to </h3>
                     </div>
                     <div class="mb-3 text-center">
-                        <a href="index.php" type="submit" class="btn">Login</a>
+                        <a href="login.php" type="submit" class="btn">Login</a>
                     </div>
                 </form>
             </div>

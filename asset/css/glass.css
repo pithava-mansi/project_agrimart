@@ -30,3 +30,21 @@ nav {
     -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(14, 11, 11, 0.4);
 }
+.btn {
+
+    background: rgba(78, 155, 113, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(52, 54, 91, 0.563);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(14, 11, 11, 0.4);
+}
+.btn:hover {
+
+    background: rgba(46, 117, 32, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(52, 54, 91, 0.563);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(14, 11, 11, 0.4);
+}
