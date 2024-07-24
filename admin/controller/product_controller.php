@@ -13,9 +13,9 @@ class products
         product_description TEXT,
         product_price DECIMAL(10, 2) NOT NULL,
         product_image VARCHAR(255)*/
-        function insert($product_name,$product_description,$product_price,$folder)
+        function insert($product_name,$product_description,$product_price,$folder,now())
         {
-            $sql  = "INSERT INTO `products`(`product_name`, `product_description`, `product_price`, `product_image`) VALUES ($product_name,$product_description,$product_price,$folder)";       
+            $sql  = "INSERT INTO `products`(`product_name`, `product_description`, `product_price`, `product_image`,`create_at`) VALUES ($product_name,$product_description,$product_price,$folder,now())";       
             $res=mysqli_query($this->db,$sql);
             return $res;
         }
@@ -31,14 +31,14 @@ class products
             $sql = "DELETE FROM `courses` WHERE `course_id`='$id'";
             $res = mysqli_query($this->db, $sql);
             return $res;
-        }
+        }*/
         function view()
         {
                 
-            $sql = "SELECT * FROM `users`";
+            $sql = "SELECT * FROM `products`";
             $res = mysqli_query($this->db,$sql);
             return $res;
-        }*/
+        }
     }
     $obj = new products();
     if (isset($_POST['submit'])) {
@@ -46,12 +46,12 @@ class products
         $product_description=$_POST['product_description'];
         $product_price=$_POST['product_price'];
 
-        $file=$_FILES['image']['name'];
-	    $tname=$_FILES['image']['tmp_name'];
-	    $folder="asset/img/".$file;
+        $file=$_FILES['product_image']['name'];
+	    $tname=$_FILES['product_image']['tmp_name'];
+	    $folder="./asset/img".$file;
 	    move_uploaded_file($tname,$folder);
 
-        $result=$obj->insert($product_name,$product_description,$product_price,$folder);
+        $result=$obj->insert($product_name,$product_description,$product_price,$folder,now());
         
         if ($result==true) {
           header("Location:index.php");
@@ -81,6 +81,4 @@ class products
             echo "not deleted";
         }
     }*/
-    
-    //$obj1=new courses();
 ?>
