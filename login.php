@@ -1,11 +1,11 @@
 <?php
    // include 'admin/error.php';
   session_start();
-//  if (isset($_SESSION['ID'])) {
-//      header("Location:index.php");
-//      exit();
-//   }
-  // Include database connectivity
+ if (isset($_SESSION['ID'])) {
+     header("Location:dashboard.php");
+     exit();
+  }
+  //Include database connectivity
     
   include_once('admin/controller/database/db.php');
   
