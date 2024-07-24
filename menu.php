@@ -62,7 +62,7 @@ if(2==$_SESSION['ROLE']){
                     <a class="nav-link " href="#">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Contact us</a>
+                    <a class="nav-link " href="contact.php">Contact us</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link " href="feedback.php">feedback</a>
