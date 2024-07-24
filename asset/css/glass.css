@@ -15,7 +15,7 @@ body {
 }
 nav {
     background: rgba(8, 117, 206, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(141, 107, 145, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(173, 153, 175, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
@@ -32,19 +32,36 @@ nav {
 }
 .btn {
 
-    background: rgba(78, 155, 113, 0.4);
+    background: rgba(15, 230, 112, 0.4);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(52, 54, 91, 0.563);
+    box-shadow: 0 4px 30px rgba(140, 142, 185, 0.563);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(14, 11, 11, 0.4);
 }
 .btn:hover {
 
-    background: rgba(46, 117, 32, 0.4);
+    background: rgba(69, 53, 128, 0.4);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(52, 54, 91, 0.563);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(14, 11, 11, 0.4);
+}
+input{    
+        background: rgba(255, 255, 255, 0.56);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border: 1px solid rgba(5, 5, 5, 0.4);       
+}
+input:focus {
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
