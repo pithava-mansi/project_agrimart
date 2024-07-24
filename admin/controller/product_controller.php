@@ -13,9 +13,9 @@ class products
         product_description TEXT,
         product_price DECIMAL(10, 2) NOT NULL,
         product_image VARCHAR(255)*/
-        function insert($product_name,$product_description,$product_price,$product_image)
+        function insert($product_name,$product_description,$product_price,$folder)
         {
-            $sql  = "INSERT INTO `products`() VALUES ()";       
+            $sql  = "INSERT INTO `products`(`product_name`, `product_description`, `product_price`, `product_image`) VALUES ($product_name,$product_description,$product_price,$folder)";       
             $res=mysqli_query($this->db,$sql);
             return $res;
         }
@@ -42,23 +42,16 @@ class products
     }
     $obj = new products();
     if (isset($_POST['submit'])) {
-        
-        $fname= $conn->real_escape_string($_POST['fname']);
-        $lname= $conn->real_escape_string($_POST['lname']);
-        $email= $conn->real_escape_string($_POST['email']);
-        $username= $conn->real_escape_string($_POST['username']);
-        $pass=$conn->real_escape_string(md5($_POST['password']));
-        $role=$conn->real_escape_string($_POST['role']);
-/*
+        $product_name=$_POST['product_name'];
+        $product_description=$_POST['product_description'];
+        $product_price=$_POST['product_price'];
 
-        $fname=$_POST['fname'];
-        $lname=$_POST['lname'];
-        $email=$_POST['email'];
-        $username=$_POST['username'];
-        $pass=$_POST['pass'];
-        $role=$_POST['role'];
-      */  
-        $result=$obj->insert();
+        $file=$_FILES['image']['name'];
+	    $tname=$_FILES['image']['tmp_name'];
+	    $folder="asset/img/".$file;
+	    move_uploaded_file($tname,$folder);
+
+        $result=$obj->insert($product_name,$product_description,$product_price,$folder);
         
         if ($result==true) {
           header("Location:index.php");

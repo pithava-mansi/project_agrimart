@@ -1,18 +1,22 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 body {
 
     background-image: url(image/g3.avif);
     background-size: cover;
-   
+
 }
+
 .nav-item:hover {
-    background: rgba(8, 117, 206, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(69, 35, 73, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(12, 6, 6, 0.18);
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 nav {
     background: rgba(8, 117, 206, 0.25);
     box-shadow: 0 8px 32px 0 rgba(141, 107, 145, 0.37);
@@ -21,6 +25,7 @@ nav {
     border-radius: 10px;
     border: 2px solid rgba(5, 5, 5, 0.18);
 }
+
 .form {
     color: white;
     background: rgba(255, 255, 255, 0.4);
@@ -29,4 +34,71 @@ nav {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(7, 6, 6, 0.4);
+}
+
+.btn {
+
+    background: rgba(15, 230, 112, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(140, 142, 185, 0.563);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(14, 11, 11, 0.4);
+}
+
+.btn:hover {
+
+    background: rgba(176, 255, 6, 0.875);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(176, 255, 6, 0.875);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 29, 240, 0.3);
+}
+
+input {
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(5, 5, 5, 0.4);
+}
+
+input:focus {
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card {
+    color: white;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(52, 54, 91, 0.563);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card-edit {
+    background: rgba(3, 246, 250, 0.875);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(138, 123, 255, 0.3);
+}
+
+.card-delete {
+    background: rgba(255, 6, 6, 0.875);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(138, 123, 255, 0.3);
 }

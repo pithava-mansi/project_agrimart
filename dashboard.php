@@ -29,19 +29,31 @@ if(2==$_SESSION['ROLE']){
 		<div class="row mt-1">
 
 			<?php
-			$sql = "SELECT * FROM courses";
+			$sql = "SELECT * FROM product";
 			$res = mysqli_query($conn, $sql);
 
 			while ($row = mysqli_fetch_assoc($res)) {
 				?>
 				<div class="col-lg-4 col-md-4 col-sm-12 ">
-					<div class="card viral-card m-1 text-center p-1">
+					<div class="card m-1 text-center p-1">
 						<h4>
-							<?php echo $row["course"]; ?>
+							<?php echo $row["product_name"]; ?>
 						</h4>
-						<form action="semesters.php" method="POST">
-							<button class="btn viral-card-2 m-3" type="submit" name="course_id"
-								value="<?php echo $row["course_id"]; ?>">View</button>
+						<h4>
+						<?php echo $row["product_description"]; ?>
+						</h4>
+						<h4>
+						<?php echo $row["product_price"]; ?>
+						</h4>
+						<h4>
+							<img src="<?php echo $row["product_image"]; ?>" height="80px" width="80px">
+						</h4>
+						<h4>
+						<?php echo $row["create_at"]; ?>
+						</h4>
+						<form action="addtocart.php" method="POST">
+							<button class="btn m-3" type="submit" name="product_id"
+								value="<?php echo $row["product_id"]; ?>">details</button>
 						</form>
 					</div>
 
