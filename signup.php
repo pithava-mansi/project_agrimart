@@ -15,6 +15,7 @@ include 'admin/controller/user_controller.php';
 </head>
 
 <body>
+<?php include 'menu.php';?>
     <div class="container-fluid ">
 
         <div class="row  d-flex  justify-content-center  mt-3">
