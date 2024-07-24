@@ -25,8 +25,8 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <a class="nav-link text-dark" href="logout.php">Hi, <?php echo ucwords($_SESSION['USERNAME']); ?> <span
-                        class="btn nav-item text-danger">Logout</span></a>
+                <a class="nav-link text-dark" href="login.php"><span
+                        class="btn nav-item text-danger">Login</span></a>
             </form>
         </div>
     </div>
