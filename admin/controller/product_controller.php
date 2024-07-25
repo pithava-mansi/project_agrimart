@@ -13,7 +13,7 @@ class products
         product_description TEXT,
         product_price DECIMAL(10, 2) NOT NULL,
         product_image VARCHAR(255)*/
-        function insert($product_name,$product_description,$product_price,$folder,now())
+        function insert($product_name,$product_description,$product_price,$folder)
         {
             $sql  = "INSERT INTO `products`(`product_name`, `product_description`, `product_price`, `product_image`,`create_at`) VALUES ($product_name,$product_description,$product_price,$folder,now())";       
             $res=mysqli_query($this->db,$sql);
@@ -51,7 +51,7 @@ class products
 	    $folder="./asset/img".$file;
 	    move_uploaded_file($tname,$folder);
 
-        $result=$obj->insert($product_name,$product_description,$product_price,$folder,now());
+        $result=$obj->insert($product_name,$product_description,$product_price,$folder);
         
         if ($result==true) {
           header("Location:index.php");
