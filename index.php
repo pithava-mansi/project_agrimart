@@ -8,7 +8,7 @@
     <?php include 'css.php'; ?>
 </head>
 
-<body>
+<body class="body">
     
      <?php include 'menu.php'; ?>
     
