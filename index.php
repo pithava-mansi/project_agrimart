@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>agrimart</title>
-    <?php include 'css.php'; ?>
+    <?php include 'css.php'; include 'error.php';?>
 </head>
 
-<body class="body">
+<body>
     
      <?php include 'menu.php'; ?>
     

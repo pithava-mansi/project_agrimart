@@ -23,13 +23,13 @@ if(0==$_SESSION['ROLE']){
                     <a class="nav-link  " href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Users</a>
+                    <a class="nav-link " href="users.php">Users</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="product.php">product</a>
+                    <a class="nav-link " href="product.php">Product</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="feedback.php">feedback</a>
+                    <a class="nav-link " href="feedback.php">Feedback</a>
                 </li>
                 <li class="nav-item dark  ">
                     <h4 id=" " class="m-1 "><i class="sun-moon bi bi-sun"></i></h4>
@@ -59,13 +59,13 @@ if(0==$_SESSION['ROLE']){
                     <a class="nav-link  " href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Users</a>
+                    <a class="nav-link " href="users.php">Users</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="product.php">product</a>
+                    <a class="nav-link " href="product.php">Product</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="feedback.php">feedback</a>
+                    <a class="nav-link " href="feedback.php">Feedback</a>
                 </li>
                 <li class="nav-item dark  ">
                     <h4 id=" " class="m-1 "><i class="sun-moon bi bi-sun"></i></h4>

@@ -28,7 +28,7 @@ if (0 == $_SESSION['ROLE']) {
 
         <div class="row p-2 mt-1">
 
-            <div class=" viral-card text-center">
+            <div class="product-card text-center">
                 <form class="mt-3" action="" method="POST" enctype="multipart/form-data">
 
                     <div class="input-group mb-3">
@@ -39,7 +39,7 @@ if (0 == $_SESSION['ROLE']) {
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text col-2" id="productdescription">
-                            <h5><i class="bi bi-journal"></i>product_description</h5>
+                            <h5><i class="bi bi-journal"></i>description</h5>
                         </span>
                         <input type="text" name="product_description" class="p-2 col-8" placeholder="Add Product Description">                       
                     </div>

@@ -26,14 +26,14 @@ class users
             $sql = "DELETE FROM `courses` WHERE `course_id`='$id'";
             $res = mysqli_query($this->db, $sql);
             return $res;
-        }
+        }*/
         function view()
         {
                 
             $sql = "SELECT * FROM `users`";
             $res = mysqli_query($this->db,$sql);
             return $res;
-        }*/
+        }
     }
     $obj = new users();
     if (isset($_POST['submit'])) {
