@@ -55,9 +55,9 @@
 
         <div class="row  d-flex  justify-content-center  mt-3">
             <div class="col-md-4  col-sm-12">
-                <!-- <div class="d-flex  justify-content-center  mt-3">
-            <img class="logo" src="asset/css/image/saurashtra-university-logo.png" alt="" srcset="">
-        </div> -->
+            <div class="d-flex  justify-content-center  mt-3">
+							<img class="logo" src="asset/css/image/admin-logo.png" alt="" srcset="">
+						</div>
                 <form class="mt-3 aline-item-center form p-2 mb-3" action="" method="POST">
                     <div class="text text-center text-dark">
                         <h3>Login</h3>
